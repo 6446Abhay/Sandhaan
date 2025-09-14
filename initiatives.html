@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Initiatives - Sandhaan Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-slate-900">
+                    <a href="sandhaan-club.html">Sandhaan Club</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="sandhaan-club.html" class="text-slate-600 hover:text-indigo-600 transition">Home</a>
+                    <a href="about.html" class="text-slate-600 hover:text-indigo-600 transition">About</a>
+                    <a href="media.html" class="text-slate-600 hover:text-indigo-600 transition">Media</a>
+                    <a href="initiatives.html" class="text-indigo-600 font-semibold transition">Initiatives</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-indigo-600 transition">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4 border-t border-slate-200">
+            <a href="sandhaan-club.html" class="block text-slate-600 hover:text-indigo-600 py-2">Home</a>
+            <a href="about.html" class="block text-slate-600 hover:text-indigo-600 py-2">About</a>
+            <a href="media.html" class="block text-slate-600 hover:text-indigo-600 py-2">Media</a>
+            <a href="initiatives.html" class="block text-indigo-600 font-semibold py-2">Initiatives</a>
+            <a href="contact.html" class="block text-slate-600 hover:text-indigo-600 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Our Initiatives Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-extrabold text-slate-900">Our Initiatives</h1>
+                    <p class="mt-2 text-lg text-slate-600">Driving creativity and collaboration on campus.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Initiative Card -->
+                    <div class="bg-slate-50 p-8 rounded-lg shadow-md flex items-start space-x-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full">
+                                <i data-lucide="book-open" class="w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Annual Magazine</h3>
+                            <p class="text-slate-600">The cornerstone of our club, our annual magazine showcases the best writing, photography, and artwork from students.</p>
+                        </div>
+                    </div>
+                    <!-- Initiative Card -->
+                    <div class="bg-slate-50 p-8 rounded-lg shadow-md flex items-start space-x-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full">
+                                <i data-lucide="pencil-ruler" class="w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Creative Workshops</h3>
+                            <p class="text-slate-600">We host regular workshops on topics like journalism, creative writing, graphic design, and public speaking to hone our members' skills.</p>
+                        </div>
+                    </div>
+                    <!-- Initiative Card -->
+                    <div class="bg-slate-50 p-8 rounded-lg shadow-md flex items-start space-x-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full">
+                                <i data-lucide="mic" class="w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Guest Speaker Series</h3>
+                            <p class="text-slate-600">Inviting professionals from media, education, and arts to share their experiences and inspire our student community.</p>
+                        </div>
+                    </div>
+                     <!-- Initiative Card -->
+                    <div class="bg-slate-50 p-8 rounded-lg shadow-md flex items-start space-x-6">
+                        <div class="flex-shrink-0">
+                            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full">
+                                <i data-lucide="camera" class="w-8 h-8"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Digital Media Projects</h3>
+                            <p class="text-slate-600">Exploring new forms of storytelling through podcasts, short films, and online articles to reach a wider audience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Ideas in Education Section -->
+        <section class="py-16 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-slate-900">New Ideas in Education</h2>
+                    <p class="mt-2 text-lg text-slate-600">Exploring the future of learning and teaching.</p>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- Idea Article -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-2">Gamification in the Classroom</h3>
+                        <p class="text-slate-600 mb-4">How can we leverage game mechanics to make learning more engaging and effective? We explore the potential of points, badges, and leaderboards in education.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">Read our thoughts &rarr;</a>
+                    </div>
+                    <!-- Idea Article -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-2">The Role of AI in Personalized Learning</h3>
+                        <p class="text-slate-600 mb-4">Artificial intelligence is poised to revolutionize education by tailoring learning paths to individual student needs. What are the opportunities and challenges?</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">Explore the future &rarr;</a>
+                    </div>
+                    <!-- Idea Article -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-2">Project-Based Learning for Deeper Understanding</h3>
+                        <p class="text-slate-600 mb-4">Moving beyond memorization to application. We delve into how project-based learning can foster critical thinking, collaboration, and real-world problem-solving skills.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="text-sm text-slate-400">&copy; 2025 Sandhaan Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
