@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sandhaan Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-slate-900">
+                    <a href="sandhaan-club.html">Sandhaan Club</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="sandhaan-club.html" class="text-slate-600 hover:text-indigo-600 transition">Home</a>
+                    <a href="about.html" class="text-slate-600 hover:text-indigo-600 transition">About</a>
+                    <a href="media.html" class="text-slate-600 hover:text-indigo-600 transition">Media</a>
+                    <a href="contact.html" class="text-indigo-600 font-semibold transition">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4 border-t border-slate-200">
+            <a href="sandhaan-club.html" class="block text-slate-600 hover:text-indigo-600 py-2">Home</a>
+            <a href="about.html" class="block text-slate-600 hover:text-indigo-600 py-2">About</a>
+            <a href="media.html" class="block text-slate-600 hover:text-indigo-600 py-2">Media</a>
+            <a href="contact.html" class="block text-indigo-600 font-semibold py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Get in Touch Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-extrabold text-slate-900">Get in Touch</h1>
+                    <p class="mt-2 text-lg text-slate-600">We'd love to hear from you! Please fill out the form below.</p>
+                </div>
+
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 bg-slate-50 p-8 rounded-lg shadow-md">
+                    <!-- Contact Info -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-6">Contact Information</h2>
+                        <div class="space-y-4 text-slate-600">
+                            <p class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 mr-3 text-indigo-600"></i>
+                                <span>sandhaan.rieajmer@gmail.com</span>
+                            </p>
+                            <p class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 mr-3 text-indigo-600"></i>
+                                <span>+91 123 456 7890</span>
+                            </p>
+                            <p class="flex items-start">
+                                <i data-lucide="map-pin" class="w-5 h-5 mr-3 text-indigo-600 mt-1"></i>
+                                <span>Regional Institute of Education, Capt. D.P. Choudhary Marg, Ajmer, Rajasthan 305004</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Query Form -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800 mb-6">Raise a Query</h2>
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full py-2 px-3 border border-slate-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full py-2 px-3 border border-slate-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-sm font-medium text-slate-700">Subject</label>
+                                <input type="text" id="subject" name="subject" required class="mt-1 block w-full py-2 px-3 border border-slate-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-slate-700">Your Message</label>
+                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full py-2 px-3 border border-slate-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Contacts -->
+        <section class="py-16 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-slate-900">Contact the Team</h2>
+                    <p class="mt-2 text-lg text-slate-600">Reach out to our team members directly.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <!-- Team Member -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/150x150/E2E8F0/475569?text=Person" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h3 class="text-lg font-bold">Alex Johnson</h3>
+                        <p class="text-slate-500 mb-3">Editor-in-Chief</p>
+                        <a href="mailto:alex.j@example.com" class="text-indigo-600 hover:underline">alex.j@example.com</a>
+                    </div>
+                     <!-- Team Member -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/150x150/E2E8F0/475569?text=Person" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h3 class="text-lg font-bold">Maria Garcia</h3>
+                        <p class="text-slate-500 mb-3">Managing Editor</p>
+                        <a href="mailto:maria.g@example.com" class="text-indigo-600 hover:underline">maria.g@example.com</a>
+                    </div>
+                     <!-- Team Member -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/150x150/E2E8F0/475569?text=Person" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h3 class="text-lg font-bold">Chen Wei</h3>
+                        <p class="text-slate-500 mb-3">Lead Designer</p>
+                        <a href="mailto:chen.w@example.com" class="text-indigo-600 hover:underline">chen.w@example.com</a>
+                    </div>
+                     <!-- Team Member -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/150x150/E2E8F0/475569?text=Person" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h3 class="text-lg font-bold">Samira Khan</h3>
+                        <p class="text-slate-500 mb-3">Head of Outreach</p>
+                        <a href="mailto:samira.k@example.com" class="text-indigo-600 hover:underline">samira.k@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="text-sm text-slate-400">&copy; 2025 Sandhaan Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // In a real application, you would handle form submission here (e.g., send data to a server).
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+</html>
