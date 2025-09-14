@@ -3,173 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Magazine - Home</title>
+    <title>Welcome to Sandhaan Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* A light grey background */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1740&auto=format&fit=crop') center center/cover no-repeat;
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-slate-50 text-slate-800">
 
     <!-- Header Section -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div>
-                    <a href="#" class="text-2xl font-bold text-gray-800">LOGO</a>
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-slate-900">
+                    <a href="#">Sandhaan Club</a>
                 </div>
+                
+                <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 pb-1 transition">Home</a>
-                    <a href="#" class="text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 pb-1 transition">Articles</a>
-                    <a href="#" class="text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 pb-1 transition">Categories</a>
-                    <a href="#" class="text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 pb-1 transition">About Us</a>
-                    <a href="#" class="text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 pb-1 transition">Contact</a>
+                    <a href="#" class="text-slate-600 hover:text-indigo-600 transition">Home</a>
+                    <a href="#" class="text-slate-600 hover:text-indigo-600 transition">About</a>
+                    <a href="#" class="text-slate-600 hover:text-indigo-600 transition">Media</a>
+                    <a href="#" class="text-slate-600 hover:text-indigo-600 transition">Contact</a>
                 </nav>
+
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button">
-                        <i data-lucide="menu"></i>
+                    <button id="mobile-menu-button" class="text-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#" class="block text-gray-600 hover:text-blue-600 py-2">Home</a>
-            <a href="#" class="block text-gray-600 hover:text-blue-600 py-2">Articles</a>
-            <a href="#" class="block text-gray-600 hover:text-blue-600 py-2">Categories</a>
-            <a href="#" class="block text-gray-600 hover:text-blue-600 py-2">About Us</a>
-            <a href="#" class="block text-gray-600 hover:text-blue-600 py-2">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4 border-t border-slate-200">
+            <a href="#" class="block text-slate-600 hover:text-indigo-600 py-2">Home</a>
+            <a href="#" class="block text-slate-600 hover:text-indigo-600 py-2">About</a>
+            <a href="#" class="block text-slate-600 hover:text-indigo-600 py-2">Media</a>
+            <a href="#" class="block text-slate-600 hover:text-indigo-600 py-2">Contact</a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-            <!-- Left Column: Articles -->
-            <div class="lg:col-span-2">
-                <!-- Latest Issue -->
-                <section>
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Latest Issue</h2>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="relative bg-black text-white p-8">
-                            <img src="https://placehold.co/800x400/000000/FFFFFF?text=Latest+Issue" alt="Abstract art for latest issue" class="absolute inset-0 w-full h-full object-cover opacity-30">
-                            <div class="relative">
-                                <h3 class="text-4xl font-bold mb-2">Lead Ersttler</h3>
-                                <p class="text-gray-300 mb-6 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition">Read Now</a>
-                            </div>
-                        </div>
-                        <div class="flex justify-center p-4">
-                            <span class="w-3 h-3 bg-blue-600 rounded-full mx-1"></span>
-                            <span class="w-3 h-3 bg-gray-300 rounded-full mx-1"></span>
-                            <span class="w-3 h-3 bg-gray-300 rounded-full mx-1"></span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Archive -->
-                <section class="mt-12">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Archive</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <!-- Archive Card 1 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="https://placehold.co/400x300/E2E8F0/4A5568?text=Lam+Erced+Pir" alt="Portrait of Lam Erced Pir" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h4 class="font-bold text-lg">Lam Erced Pir Issue</h4>
-                                <p class="text-sm text-gray-600">Past Issue</p>
-                                <a href="#" class="text-blue-600 hover:underline text-sm mt-2 inline-block">View All</a>
-                            </div>
-                        </div>
-                        <!-- Archive Card 2 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="https://placehold.co/400x300/E2E8F0/4A5568?text=Witti's+Pracber" alt="Portrait of Witti's Pracber" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h4 class="font-bold text-lg">Witti's Pracber</h4>
-                                <p class="text-sm text-gray-600">Past Issue</p>
-                                <a href="#" class="text-blue-600 hover:underline text-sm mt-2 inline-block">View All</a>
-                            </div>
-                        </div>
-                        <!-- Archive Card 3 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                             <img src="https://placehold.co/400x300/E2E8F0/4A5568?text=Racin+Cacebom" alt="Portrait of Racin Cacebom" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h4 class="font-bold text-lg">Racin'h Cacebom</h4>
-                                <p class="text-sm text-gray-600">Past Issue</p>
-                                <a href="#" class="text-blue-600 hover:underline text-sm mt-2 inline-block">View All</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-white h-[60vh] md:h-[70vh] flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight leading-tight">Welcome to Sandhaan Club</h1>
+                <p class="mt-4 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">Fostering creativity and exploring new education initiatives through the student-led magazine of RIE Ajmer.</p>
             </div>
+        </section>
 
-            <!-- Right Column: Sidebar -->
-            <aside>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <!-- Search -->
-                    <div class="relative mb-6">
-                        <input type="text" placeholder="Search" class="w-full py-2 pl-4 pr-10 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500">
-                        <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
-                            <i data-lucide="search" class="w-5 h-5"></i>
-                        </button>
+        <!-- About the Club Section -->
+        <section class="py-16 bg-slate-50">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold text-slate-800 mb-4">Our Mission</h2>
+                 <p class="text-slate-600 mb-12 max-w-2xl mx-auto">Sandhaan Club is a dedicated platform by and for the students of RIE Ajmer to channel their creativity. We focus on publishing a collaborative magazine that highlights innovative ideas and explores new frontiers in education.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <i data-lucide="book-open" class="w-12 h-12 text-indigo-600 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Student Magazine</h3>
+                        <p class="text-slate-600">We publish a regular magazine, written and curated by students, for students.</p>
                     </div>
-
-                    <!-- Social Media Feeds -->
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Social Media Feeds</h3>
-                    <div class="space-y-4">
-                        <a href="#" class="flex items-center space-x-4 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition">
-                            <img src="https://placehold.co/40x40/E1306C/FFFFFF?text=IG" class="w-10 h-10 rounded-lg" alt="Instagram Logo">
-                            <div>
-                                <p class="font-semibold text-gray-800">Instagram</p>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full mt-1"></div>
-                            </div>
-                        </a>
-                        <a href="#" class="flex items-center space-x-4 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition">
-                            <img src="https://placehold.co/40x40/1877F2/FFFFFF?text=FB" class="w-10 h-10 rounded-lg" alt="Facebook Logo">
-                            <div>
-                                <p class="font-semibold text-gray-800">Facebook</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex items-center space-x-4 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition">
-                            <img src="https://placehold.co/40x40/000000/FFFFFF?text=X" class="w-10 h-10 rounded-lg" alt="Twitter (X) Logo">
-                            <div>
-                                <p class="font-semibold text-gray-800">Twitter (now X)</p>
-                            </div>
-                        </a>
-                        <a href="#" class="flex items-center space-x-4 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition">
-                            <img src="https://placehold.co/40x40/FF0000/FFFFFF?text=YT" class="w-10 h-10 rounded-lg" alt="YouTube Logo">
-                            <div>
-                                <p class="font-semibold text-gray-800">YouTube</p>
-                            </div>
-                        </a>
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <i data-lucide="lightbulb" class="w-12 h-12 text-indigo-600 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Foster Creativity</h3>
+                        <p class="text-slate-600">A hub for writers, designers, and thinkers to express their unique perspectives.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <i data-lucide="rocket" class="w-12 h-12 text-indigo-600 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Education Initiatives</h3>
+                        <p class="text-slate-600">Discovering and discussing the latest trends and ideas in modern education.</p>
                     </div>
                 </div>
-            </aside>
+            </div>
+        </section>
 
-        </div>
+        <!-- Social Media Links Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Connect With Us</h2>
+                <p class="text-slate-600 mb-8 max-w-xl mx-auto">Stay updated with our latest activities, events, and announcements by following us on social media.</p>
+                <div class="flex justify-center items-center space-x-6 md:space-x-8">
+                    <a href="#" class="text-slate-500 hover:text-indigo-600 transition-transform transform hover:scale-110">
+                        <i data-lucide="twitter" class="w-8 h-8 md:w-10 md:h-10"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                    <a href="#" class="text-slate-500 hover:text-indigo-600 transition-transform transform hover:scale-110">
+                        <i data-lucide="facebook" class="w-8 h-8 md:w-10 md:h-10"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="text-slate-500 hover:text-indigo-600 transition-transform transform hover:scale-110">
+                        <i data-lucide="instagram" class="w-8 h-8 md:w-10 md:h-10"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="#" class="text-slate-500 hover:text-indigo-600 transition-transform transform hover:scale-110">
+                        <i data-lucide="linkedin" class="w-8 h-8 md:w-10 md:h-10"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                     <a href="#" class="text-slate-500 hover:text-indigo-600 transition-transform transform hover:scale-110">
+                        <i data-lucide="youtube" class="w-8 h-8 md:w-10 md:h-10"></i>
+                        <span class="sr-only">YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-12">
-        <div class="container mx-auto px-6 py-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="text-sm text-gray-400">&copy; 2025 College Magazine. All rights reserved.</p>
-                <div class="flex items-center space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-sm text-gray-400 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-sm text-gray-400 hover:text-white transition">Terms of Service</a>
-                </div>
-                <div class="mt-4 md:mt-0">
-                     <form class="flex">
-                        <input type="email" placeholder="Your email for newsletter" class="bg-gray-700 text-white rounded-l-lg py-2 px-4 focus:outline-none">
-                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-r-lg transition">Subscribe</button>
-                    </form>
-                </div>
-            </div>
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="text-sm text-slate-400">&copy; 2025 Sandhaan Club. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -186,3 +141,5 @@
 
 </body>
 </html>
+
+
