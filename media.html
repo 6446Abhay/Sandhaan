@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Sandhaan Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-slate-900">
+                    <a href="sandhaan-club.html">Sandhaan Club</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="sandhaan-club.html" class="text-slate-600 hover:text-indigo-600 transition">Home</a>
+                    <a href="about.html" class="text-slate-600 hover:text-indigo-600 transition">About</a>
+                    <a href="media.html" class="text-indigo-600 font-semibold transition">Media</a>
+                    <a href="#" class="text-slate-600 hover:text-indigo-600 transition">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4 border-t border-slate-200">
+            <a href="sandhaan-club.html" class="block text-slate-600 hover:text-indigo-600 py-2">Home</a>
+            <a href="about.html" class="block text-slate-600 hover:text-indigo-600 py-2">About</a>
+            <a href="media.html" class="block text-indigo-600 font-semibold py-2">Media</a>
+            <a href="#" class="block text-slate-600 hover:text-indigo-600 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Latest Articles -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-extrabold text-slate-900">Latest Articles</h1>
+                    <p class="mt-2 text-lg text-slate-600">Fresh from the minds of our talented members.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Article Card (Repeat 5 times) -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/E2E8F0/475569?text=Article" alt="Article Thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">The Future of Education</h3>
+                            <p class="text-slate-600 mb-4">By Alex Johnson</p>
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/E2E8F0/475569?text=Article" alt="Article Thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Creativity in the Digital Age</h3>
+                            <p class="text-slate-600 mb-4">By Maria Garcia</p>
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/E2E8F0/475569?text=Article" alt="Article Thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">A Student's Guide to AI</h3>
+                            <p class="text-slate-600 mb-4">By Chen Wei</p>
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/E2E8F0/475569?text=Article" alt="Article Thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Campus Life Explored</h3>
+                            <p class="text-slate-600 mb-4">By Samira Khan</p>
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/E2E8F0/475569?text=Article" alt="Article Thumbnail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">The Power of Collaboration</h3>
+                            <p class="text-slate-600 mb-4">By John Smith</p>
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photograph of the Month -->
+        <section class="py-16 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-slate-900">Photograph of the Month</h2>
+                    <p class="mt-2 text-lg text-slate-600">A picture is worth a thousand words.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg max-w-4xl mx-auto">
+                    <img src="https://placehold.co/1200x800/94A3B8/FFFFFF?text=Photo+of+the+Month" alt="Photograph of the Month" class="rounded-md w-full">
+                    <div class="p-4 text-center">
+                        <h3 class="text-2xl font-bold mt-2">"Campus at Dusk"</h3>
+                        <p class="text-slate-600">by Jane Doe, B.Ed. Student</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Archive & Download Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Last Month's PDF -->
+                    <div class="bg-slate-50 p-8 rounded-lg text-center shadow-md">
+                        <h2 class="text-3xl font-bold text-slate-800 mb-4">Last Month's Issue</h2>
+                        <p class="text-slate-600 mb-6">Catch up on what you missed. Download the complete PDF of our previous issue.</p>
+                        <a href="#" class="inline-flex items-center bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors">
+                            <i data-lucide="download" class="w-5 h-5 mr-2"></i>
+                            Download Now
+                        </a>
+                    </div>
+
+                    <!-- Archive Search -->
+                    <div class="bg-slate-50 p-8 rounded-lg shadow-md">
+                        <h2 class="text-3xl font-bold text-slate-800 mb-4 text-center">Magazine Archive</h2>
+                        <div class="flex flex-col sm:flex-row gap-4 items-end">
+                            <div class="w-full">
+                                <label for="month-select" class="block text-sm font-medium text-slate-700">Month</label>
+                                <select id="month-select" class="mt-1 block w-full py-2 px-3 border border-slate-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </div>
+                            <div class="w-full">
+                                <label for="year-select" class="block text-sm font-medium text-slate-700">Year</label>
+                                <select id="year-select" class="mt-1 block w-full py-2 px-3 border border-slate-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                    <option>2025</option>
+                                    <option>2024</option>
+                                    <option>2023</option>
+                                    <option>2022</option>
+                                </select>
+                            </div>
+                            <button id="search-archive" class="w-full sm:w-auto bg-slate-800 text-white font-bold py-2 px-6 rounded-lg hover:bg-slate-700 transition-colors flex-shrink-0">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="text-sm text-slate-400">&copy; 2025 Sandhaan Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const searchArchiveButton = document.getElementById('search-archive');
+        searchArchiveButton.addEventListener('click', () => {
+            const month = document.getElementById('month-select').value;
+            const year = document.getElementById('year-select').value;
+            // In a real application, this would trigger a file download.
+            // For now, we'll just show an alert.
+            alert(`Searching for the magazine from ${month} ${year}. \n(Download functionality would be implemented here)`);
+        });
+    </script>
+
+</body>
+</html>
